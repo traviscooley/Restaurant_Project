@@ -1,0 +1,72 @@
+/*Body of Page*/
+body {
+    background-color: #f5efdc;
+}
+/**/
+
+/*Top of Page*/
+.top-bar {
+    border-top: 6px #33180e solid;
+    background-color: #de493c;
+}
+.top-bar ul {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    font-size: 21px;
+}
+.top-bar li {
+    display: inline;
+    margin-right: 3px;
+}
+.top-bar a {
+    font-style: none;
+    color: white;
+}
+/**/
+
+/*Navigation of Page*/
+.nav-bar {
+    background: #f26052;
+    background: linear-gradient(to bottom, #f26052 0%,#de493c 50%);
+}
+/**/
+
+/*Search Bar of Page*/
+.search-bar {
+    background-color: #fcf7cf;
+}
+/**/
+
+/*Slider of Page*/
+.hero-slider {
+    background: #8a8888;
+    background: linear-gradient(to bottom, #8a8888 0%,#ffffff 50%,#ffffff 50%,#8a8888 100%);
+}
+/**/
+
+/*Links to More Info on Orders and etc.*/
+.orders {
+    background-color: #f7f4e9;
+}
+/**/
+
+/*Client Logo's*/
+.client-logo-style {
+    background-color: #63635c;
+}
+/**/
+
+/*About Restaurant of Page*/
+.restaurant-info {
+    background-color: #595852;
+    border-top: 6px solid #5c5b54;
+}
+/**/
+
+/*CopyRight of Page*/
+.copyright-bar {
+    background-color: #403f38;
+}
+/**/
