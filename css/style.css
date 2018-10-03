@@ -6,6 +6,7 @@ body {
 
 /*Top of Page*/
 .top-bar {
+    padding: 5px 0;
     border-top: 6px #33180e solid;
     background-color: #de493c;
 }
@@ -21,8 +22,24 @@ body {
     margin-right: 3px;
 }
 .top-bar a {
-    font-style: none;
+    padding: 3px;
+    text-decoration: none;
     color: white;
+    border-radius: 3px;
+}
+
+@media (min-width: 1200px) {
+    .top-bar ul {
+        text-align: right;
+    }
+    .top-bar li {
+        margin-left: 5px;
+    }
+    .top-bar a:hover {
+        color: black;
+        background-color: white;
+        box-shadow: 0 0 10px 0 gray;
+    }
 }
 /**/
 
@@ -30,43 +47,238 @@ body {
 .nav-bar {
     background: #f26052;
     background: linear-gradient(to bottom, #f26052 0%,#de493c 50%);
+    padding-bottom: 20px;
+    text-align: center;
+}
+.nav-bar h1 {
+    color: white;
+}
+.nav-bar select {
+    width: 228px;
+    color: gray;
+    padding: 3px;
+    border: none;
+}
+
+@media (min-width: 1200px) {
+    .nav-bar h1 {
+        text-align: left;
+    }
+    .nav-bar ul {
+        list-style: none;
+        margin-top: 30px;
+    }
+    .nav-bar li {
+        display: inline;
+        margin-right: 0px;
+        font-size: 21px;
+    }
+    .nav-bar a {
+        padding: 10px 25px;
+        text-decoration: none;
+        color: white;
+        border-radius: 8px;
+    }
+    .nav-bar a:hover {
+        color: black;
+        background-color: white;
+        box-shadow: 0 0 10px 0 #8c8b85;
+    }
 }
 /**/
 
 /*Search Bar of Page*/
 .search-bar {
     background-color: #fcf7cf;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.search-bar p {
+    font-size: 21px;
+    color: #7a312c;
+}
+.search-bar input, button {
+    border: none;
+    background: inherit;
+    outline-color: #fcf7cf;
+}
+.search-bar form {
+    margin-left: 57px;
+    width: 65%;
+    border: 1px solid #7a312c;
+    padding: 3px 0;
+    color: #7a312c;
+}
+
+@media (min-width: 1200px) {
+    .search-bar p {
+        margin-top: 20px;
+        text-align: left;
+    }
+    .search-bar form {
+        margin: 30px 0 0 600px;
+        padding-top: 5px;
+        width: 25%;
+        height: 35px;
+        font-size: 15px
+    }
 }
 /**/
 
 /*Slider of Page*/
 .hero-slider {
-    background: #8a8888;
-    background: linear-gradient(to bottom, #8a8888 0%,#ffffff 50%,#ffffff 50%,#8a8888 100%);
+    background-image: url(../images/hero-background.jpg);
+    box-shadow: 0px 4px 10px rgb(128, 128, 128);
+    margin-bottom: 40px;
+}
+/**/
+
+/*About-Us-Links of Page*/
+.inner-col {
+    background-color: white;
+    margin-bottom: 30px;
+    padding-bottom: 1px;
+    box-shadow: 0px 4px 10px rgb(148, 148, 148);
+}
+.inner-col a {
+    text-decoration: none;
+}
+.inner-col h2 {
+    font-size: 21px;
+    margin: 3px 0 0 15px;
+    color: #de493c;
+}
+.inner-col p {
+    margin-left: 15px;
+    color: #8c8b85;
 }
 /**/
 
 /*Links to More Info on Orders and etc.*/
 .orders {
     background-color: #f7f4e9;
+    padding: 20px 0;
+}
+.reservations p {
+    color: #7a312c;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+.reser-bio i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #999e03;
+}
+.reser-bio h3 {
+    color: #999e03;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.reser-bio h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 24px;
+    color: #999e03;
+}
+.reser-bio p {
+    margin-bottom: 10;
+    color: #8c8b85;
+}
+.reser-bio a {
+    text-decoration: none;
+    color: lightcoral;
+}
+
+@media (min-width: 1200px) {
+    .reservations p {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+    .reser-bio i {
+        font-size: 60px;
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 150px;
+    }
+    .reser-bio h3 {
+        margin-top: 3px;
+    }
 }
 /**/
 
 /*Client Logo's*/
 .client-logo-style {
     background-color: #63635c;
+    text-align: center;
+    padding: 20px 0;
+}
+.client-logo-style ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+.client-logo-style li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 21px;
+    color: #8c8b85;
+}
+.client-logo-style a {
+    text-decoration: none;
+    color: #8c8b85;
+}
+.client-logo-style p {
+    margin-bottom: 0;
 }
 /**/
 
 /*About Restaurant of Page*/
 .restaurant-info {
     background-color: #595852;
-    border-top: 6px solid #5c5b54;
+    border-top: 6px solid #53524b;
+    padding: 15px 0 20px 0;
+}
+.restaurant-info h2 {
+    color: #fffffc;
+    font-size: 21px;
+    margin-bottom: 25px;
+}
+.restaurant-info h3 {
+    color: #fffffc;
+    font-size: 16px;
+    margin: 0 0;
+}
+.restaurant-info p {
+    color: #8c8b85;
+}
+hr {
+    border-color: #9e9d9a;
+}
+.restaurant-info img {
+    margin-bottom: 10px;
+}
+.restaurant-info ul {
+    list-style: none;
+    padding: 1px;
+    color: #8c8b85;
+}
+.restaurant-info a {
+    text-decoration: none;
+    color: #fffffc;
 }
 /**/
 
 /*CopyRight of Page*/
 .copyright-bar {
     background-color: #403f38;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.copyright-bar h2 {
+    color: white;
+    margin-bottom: 0;
+}
+.copyright-bar p {
+    color: #b9b9b6;
 }
 /**/
