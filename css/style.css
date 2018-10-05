@@ -104,7 +104,7 @@ body {
     outline-color: #fcf7cf;
 }
 .search-bar form {
-    margin-left: 50px;
+    margin: 0 auto;
     width: 230px;
     border: 1px solid #7a312c;
     padding: 3px 0;
@@ -156,9 +156,31 @@ body {
     margin: 3px 0 0 15px;
     color: #de493c;
 }
+.inner-col h3 {
+    margin: 3px 0 3px 15px;
+}
 .inner-col p {
     margin-left: 15px;
     color: #8c8b85;
+}
+.inner-col-container {
+    padding: 20px 40px 30px 20px;
+}
+.inner-col-container h2 {
+    margin-bottom: 25px;
+    font-size: 31px
+}
+
+@media (min-width: 1200px) {
+    .inner-col h3 a {
+        color: #7a312c;
+    }
+    .inner-col a:hover {
+        color: #de493c;
+    }
+    .inner-col-container {
+        padding: 20px 70px 50px 20px;
+    }
 }
 /**/
 
